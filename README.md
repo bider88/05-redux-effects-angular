@@ -6,6 +6,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 To get more help go check out the [Reqres](https://reqres.in).
 
+## Dependencies
+```
+$ npm i bootstrap
+$ npm install @ngrx/store --save
+$ npm install @ngrx/store-devtools --save
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
