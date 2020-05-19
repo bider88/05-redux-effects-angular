@@ -9,14 +9,14 @@ import { map } from 'rxjs/operators';
 })
 export class UserService {
 
-  private readonly url = 'https://reqres.in/api/';
+  private readonly url = 'https://reqres.in/api1/';
 
   constructor(
     private http: HttpClient
   ) { }
 
   getUserList(): Observable<UserModel[]> {
-    return this.http.get<UserModel[]>(`${this.url}users?per_page=6`).pipe(
+    return this.http.get<UserModel[]>(`${this.url}users?per_page=&delay=3`).pipe(
       map((response: any) => ([ ...response.data ] as UserModel[]))
     );
   }

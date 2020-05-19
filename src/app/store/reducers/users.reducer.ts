@@ -29,7 +29,11 @@ const usersInternalReducer = createReducer(userInitialState,
     ...state,
     loaded: false,
     loading: false,
-    error
+    error: {
+      url: error.url,
+      name: error.name,
+      message: error.message
+    }
   })),
 
 );

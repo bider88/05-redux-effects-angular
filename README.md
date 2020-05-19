@@ -11,6 +11,7 @@ To get more help go check out the [Reqres](https://reqres.in).
 $ npm i bootstrap
 $ npm install @ngrx/store --save
 $ npm install @ngrx/store-devtools --save
+$ npm install @ngrx/effects --save
 ```
 
 ## Development server
