@@ -16,13 +16,13 @@ export class UserService {
   ) { }
 
   getUserList(): Observable<UserModel[]> {
-    return this.http.get<UserModel[]>(`${this.url}users?per_page=&delay=3`).pipe(
+    return this.http.get<UserModel[]>(`${this.url}users?per_page=&delay=1`).pipe(
       map((response: any) => ([ ...response.data ] as UserModel[]))
     );
   }
 
   getUserById(id: string): Observable<UserModel> {
-    return this.http.get<UserModel>(`${this.url}users/${id}?delay=3`).pipe(
+    return this.http.get<UserModel>(`${this.url}users/${id}?delay=1`).pipe(
       map((response: any) => ({ ...response.data } as UserModel))
     );
   }
